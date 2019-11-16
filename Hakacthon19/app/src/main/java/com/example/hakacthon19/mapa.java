@@ -1,6 +1,8 @@
 package com.example.hakacthon19;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -9,11 +11,12 @@ import android.os.Bundle;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import androidx.core.content.ContextCompat;
 
 public class mapa {
     private GoogleMap mMap;
@@ -70,9 +73,21 @@ public class mapa {
 
         }
     };
-    private void miUbicacion(){
-        LocationManager locationManager=(LocationManager)getSystemService(Context.LOCATION_SERVICE);
-        Location location= locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+    private void miUbicacion(Context cn) {
+        LocationManager locationManager = (LocationManager) cn.getSystemService(Context.LOCATION_SERVICE);
+
+        if (cn.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && cn.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    Activity#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for Activity#requestPermissions for more details.
+            return;
+        }
+        Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
     }
 }
 
