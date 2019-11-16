@@ -11,4 +11,6 @@
     <string name="asesoresTitle">ASESOR</string>
     <string name="btnModulos">MODULOS</string>
     <string name="btnAlumnos">ALUMNOS</string>
+    <string name="btnMensajes">MENSAJES</string>
+    <string name="btnStatus">STATUS</string>
 </resources>
