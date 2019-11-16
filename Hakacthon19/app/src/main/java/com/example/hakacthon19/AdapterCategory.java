@@ -14,10 +14,10 @@ import java.util.ArrayList;
 
 public class AdapterCategory extends BaseAdapter {
 
+
+
     ArrayList<Category> category = new ArrayList<Category>();
-    ListView lv = (ListView) findViewById(R.id.listaTutores);
-    AdapterCategory adapter = new AdapterCategory(this, category);
-    lv.setAdapter(adapter);
+
 
     protected Activity activity;
     protected ArrayList<Category> items;

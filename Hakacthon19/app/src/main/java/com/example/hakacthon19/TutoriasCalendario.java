@@ -8,9 +8,17 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class TutoriasCalendario extends AppCompatActivity {
-    protected void onCreate(Bundle savedInstanceState){
+    protected void   onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tutoria_activity);
+
+        Button btnInicio = findViewById(R.id.btnConfirmar);
+        btnInicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TutoriasCalendario.this, Category.class));
+            }
+        });
 
 
     }

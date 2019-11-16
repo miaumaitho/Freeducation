@@ -3,7 +3,7 @@ package com.example.hakacthon19;
 import android.graphics.drawable.Drawable;
 
 
-public class Category {
+public class Category  {
 
     private String nombre;
     private String edad;
