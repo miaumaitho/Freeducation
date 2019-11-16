@@ -1,11 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSecundary"
+        android:fontFamily="@font/oswald_variable_font_wght"
+        android:text="@string/btnModulos"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorBlanco">
 
+        <ImageButton
+            android:id="@+id/ibtnPalabra"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="480dp"
+            android:background="@color/colorBlanco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.088"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/palabra" />
+
+        <ImageButton
+            android:id="@+id/ibtnMates"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp"
+            android:background="@color/colorBlanco"
+            app:layout_constraintBottom_toTopOf="@+id/ibtnFiguras"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.060"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibtnPalabra"
+            app:srcCompat="@drawable/cuentas_basicas" />
+
+        <ImageButton
+            android:id="@+id/ibtnFiguras"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginBottom="100dp"
+            android:background="@color/colorBlanco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.060"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/figuras" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="210dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="95dp"
+            android:fontFamily="@font/oswald_variable_font_wght"
+            android:text="@string/palabra"
+            android:textAlignment="center"
+            android:textColor="@color/colorSecundary"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="192dp"
+            android:layout_height="111dp"
+            android:fontFamily="@font/oswald_variable_font_wght"
+            android:text="@string/matematicas"
+            android:textAlignment="center"
+            android:textColor="@color/colorSecundary"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibtnMates"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.472" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/oswald_variable_font_wght"
+            android:text="@string/figuras"
+            android:textAlignment="center"
+            android:textColor="@color/colorSecundary"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibtnFiguras" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

@@ -13,4 +13,8 @@
     <string name="btnAlumnos">ALUMNOS</string>
     <string name="btnMensajes">MENSAJES</string>
     <string name="btnStatus">STATUS</string>
+    <string name="modulosTitle">MODULOS</string>
+    <string name="palabra">La palabra</string>
+    <string name="matematicas">Matematicas\npara empezar </string>
+    <string name="figuras">Figuras\ny mediciones</string>
 </resources>
