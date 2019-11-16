@@ -19,6 +19,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import androidx.core.content.ContextCompat;
 
 public class mapa {
+
+
     private GoogleMap mMap;
     private Marker marcador;
     double lat = 0.0;

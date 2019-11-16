@@ -7,23 +7,17 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AsesoresMain extends AppCompatActivity {
+public class InicioSesionAlumno extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.asesores_main);
+        setContentView(R.layout.inicio_sesion_alumno);
 
-        Button btn = (Button)findViewById(R.id.btnTutoria);
-        btn.setOnClickListener(new View.OnClickListener() {
+        Button btnInicio = findViewById(R.id.btnIngresarAlumno);
+        btnInicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AsesoresMain.this, Modulos.class));
+                startActivity(new Intent(InicioSesionAlumno.this, AlumnosMain.class));
             }
         });
-
-
-
-
     }
-
-
 }

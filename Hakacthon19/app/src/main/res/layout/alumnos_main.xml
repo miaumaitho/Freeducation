@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlanco"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    >
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorSecundary"
         android:fontFamily="@font/oswald_variable_font_wght"
-        android:text="@string/asesoresTitle"
+        android:text="ALUMNO"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="36sp"
@@ -24,70 +24,40 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btnTutoria"
+            android:id="@+id/btnTutoriaA"
             android:layout_width="330dp"
             android:layout_height="110dp"
-            android:background="@drawable/modulos"
+            android:background="@drawable/tuto"
             android:fontFamily="@font/oswald_variable_font_wght"
             android:lineSpacingExtra="8sp"
-            android:text="@string/btnModulos"
+            android:text="TUTORIA"
             android:textAlignment="center"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.034" />
+            app:layout_constraintVertical_bias="0.028" />
 
         <Button
-            android:id="@+id/btnAlumnos"
+            android:id="@+id/btnAvance"
             android:layout_width="330dp"
             android:layout_height="110dp"
-            android:background="@drawable/alumnos"
+            android:layout_marginBottom="404dp"
+            android:background="@drawable/ttuto"
             android:fontFamily="@font/oswald_variable_font_wght"
-            android:text="@string/btnAlumnos"
+            android:text="AVANCE"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnTutoria"
             app:layout_constraintVertical_bias="0.034" />
 
-        <Button
-            android:id="@+id/btnMensajes"
-            android:layout_width="330dp"
-            android:layout_height="110dp"
-            android:background="@drawable/mensajes"
-            android:fontFamily="@font/oswald_variable_font_wght"
-            android:text="@string/btnMensajes"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnAlumnos"
-            app:layout_constraintVertical_bias="0.034" />
-
-        <Button
-            android:id="@+id/btnStatus"
-            android:layout_width="330dp"
-            android:layout_height="110dp"
-            android:background="@drawable/status"
-            android:text="@string/btnStatus"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnMensajes"
-            app:layout_constraintVertical_bias="0.034" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </LinearLayout>

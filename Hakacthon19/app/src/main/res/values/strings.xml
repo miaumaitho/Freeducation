@@ -2,11 +2,11 @@
     <string name="app_name">Hakacthon19</string>
     <string name="iniciar_sesion">Iniciar Sesión</string>
     <string name="registrarse">Registrarse</string>
-    <string name="bienvenida_usuario">¡Bienvenido asesor!</string>
+    <string name="bienvenida_usuario">¡Bienvenido!</string>
     <string name="nuevo_usuario">¿Eres nuevo aquí?</string>
     <string name="inicio_correo">Correo electronico</string>
     <string name="inicio_contrasena">Contraseña</string>
-    <string name="inicioTitle">Inicio de sesión</string>
+    <string name="inicioTitle">Bienvenido Asesor</string>
     <string name="btnInicioSesion">Ingresar</string>
     <string name="asesoresTitle">ASESOR</string>
     <string name="btnModulos">MODULOS</string>
@@ -17,4 +17,10 @@
     <string name="palabra">La palabra</string>
     <string name="matematicas">Matematicas\npara empezar </string>
     <string name="figuras">Figuras\ny mediciones</string>
+    <string name="title_activity_map_test">Map</string>
+    <string name="bienvenida_alumno">Bienvenido Alumno</string>
+    <string name="eleccion">¿Eres asesor o alumno?</string>
+    <string name="asesor">Soy un asesor</string>
+    <string name="alumno">Soy un alumno</string>
+    <string name="calendarioConfirmar">Confirmar</string>
 </resources>
